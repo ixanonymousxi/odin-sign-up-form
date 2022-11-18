@@ -174,25 +174,83 @@ body{
 #content-container{
     width:65%;
     height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .description, #form-header{
-    width: 85%;
     font-size: 1.4rem;
     line-height: 1.2;
-    margin: 0 0 20px 0;
+    
 }
 
 .description{
-    padding-left:1.3em;
+    width: 85%;
+    padding-left:2em;
+    margin: 0 0 20px 0;
+}
+
+#form-header {
+    width: 95%;
+}
+
+.log-in{
+    width: 85%;
+    padding-left: 3em;
+    margin: 30px 0 20px 0;
+}
+
+.log-in a{
+    text-decoration: none;
+    font-weight: 600;
+    color: green;
+}
+
+form{
+    width:100%;
 }
 
 #form-field-container{
     width:100%;
     padding: 2em;
+    margin-top: 1.5em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+}
+
+.input-container{
+    width:45%;
 }
 
 label{
     display:block;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: #727272;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+input{
+    width:100%;
+    border: 1px solid #e3e3e3;
+    height: 30px;
+    border-radius: 5px;
+}
+
+button{
+    padding: 0.8em 3em;
+    background: green;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: none;
+    margin-left: 3.5em;
+    margin-top: 2em;
+    border-radius: 5px;
 }
